@@ -1,3 +1,5 @@
+helpers Convert
+
 get '/todos' do 
 	#返回整个todos数据集,使用Json
 	 json get_hash_all(Todo.all)
