@@ -14,10 +14,7 @@ post '/todos' do
 	#添加新的代办事项
 	#处理json
 	new_hash = JSON.parse request.body.read
-	@todo = Todo.new do |p|
-		p.content= new_hash["content"]
-		p.done= new_hash["done"]
-	end
+	@todo = Todo.new(:content=>new_hash["content"],:done=>new_hash["done"])
   @todo.save
 end
 
