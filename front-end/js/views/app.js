@@ -70,7 +70,6 @@ define([
     },
 
     // If you hit return in the main input field, create new **Todo** model,
-    // persisting it to *localStorage*.
     createOnEnter: function(e) {
       if (e.keyCode != 13) return;
       Todos.create(this.newAttributes());
