@@ -1,6 +1,7 @@
 define(['underscore', 'backbone'], function(_, Backbone) {
   var TodoModel = Backbone.Model.extend({
-    defaults: {
+		urlRoot: 'http://localhost:4567/todos',
+		defaults: {
       content: "empty todo...",
       done: false
     },
