@@ -1,9 +1,8 @@
 AnyDo
 =====
-----
-AnyDo is a liitle application powered by Sinatra, and is aimed at helping people manage their life.
+AnyDo is a litle application powered by Sinatra and aimed at helping people manage their life.
   
-##Implemention
+## Implemention
 1. Sinatra
 2. Sequel and MySql
 3. gitflow
