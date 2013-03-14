@@ -11,4 +11,3 @@ AnyDo is a liitle application powered by Sinatra, and is aimed at helping people
 5. Json
 6. Testing using Rack::Test
 7. Mixed with Backbone.js
-8. HTML5
