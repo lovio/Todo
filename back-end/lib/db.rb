@@ -7,13 +7,13 @@ DB.logger=Logger.new('sqlite.log')
 class Todo < Sequel::Model
 	set_schema do
 		primary_key :id
-		String :content
+		String :title
 		TrueClass :done
 	end
 
 	def validate
 		super
-		errors.add(:content,"can't be empty") if content.empty?
+		errors.add(:title,"can't be empty") if title.empty?
 	end
 
 end
