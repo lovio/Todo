@@ -6,8 +6,8 @@ require 'sequel'
 require 'logger'
 
 configure do 
-	enable :cross_origin
-	set :allow_headers,["*", "Content-Type", "Accept", "AUTHORIZATION", "Cache-Control"]
+  enable :cross_origin
+  set :allow_headers,["Content-Type"]
 	set :allow_origin, :any
 	set :allow_methods, [:get, :post, :delete, :put]
 end
