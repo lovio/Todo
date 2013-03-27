@@ -5,7 +5,7 @@ require 'json'
 require 'sequel'
 require 'logger'
 
-configure do 
+configure do
   enable :cross_origin
   set :allow_headers,["Content-Type"]
 	set :allow_origin, :any

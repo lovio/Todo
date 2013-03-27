@@ -16,6 +16,7 @@ post '/todos' do
 	new_hash = JSON.parse request.body.read
 	@todo = Todo.new(:title=>new_hash["title"],:done=>new_hash["done"])
   @todo.save
+	nil
 end
 
 put '/todos/:id' do
@@ -23,9 +24,11 @@ put '/todos/:id' do
 	#接受处理的Json
 	new_hash = JSON.parse request.body.read
 	@todo=Todo[params[:id]].update(:title=>new_hash["title"],:done=>new_hash["done"])
+	nil
 end
 
 delete '/todos/:id' do
 	#删除制定的代办事项
 	Todo[params[:id]].delete
+	nil
 end
